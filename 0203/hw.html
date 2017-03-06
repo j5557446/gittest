@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+</head>
+<body>
+<h1>九九乘法表(巢狀迴圈)</h1>
+<table border="1">
+        <script>
+        var i,j;
+            document.write("<tr><td></td>");
+       for (i = 1; i <= 9; i++)
+               document.write("<td><b>"+i+"</b></td>");
+      
+               document.write("<tr>");
+                       
+     for (i=1;i<=9;i++)
+            {
+                                
+                 document.write("<td><b>"+i+"<b></td>");
+                for(j=1;j<=9;j++)
+                {
+                document.write( "<td>"+ i + "*" + j + "=" + i * j + "</td>");
+
+                }
+                
+               document.write("<tr>");
+            }
+     
+
+    
+    
+    
+   
+    
+</script>
+</table>
+
+</body>
+</html>

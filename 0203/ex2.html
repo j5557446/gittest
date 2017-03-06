@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript 放置位置</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+<!--    <script language="javascript"></script>-->
+<!--    <script type="text/javascript"></script>-->
+<script>
+    /* 
+      - 事先宣告, 在被呼叫時, 才會被執行,如function
+      - 保證要點用時, 已經被載入
+      - 事先取得某些資料 
+    */
+    document.write("<p><i>這是放在 HTML head 的 Javascript</i></p>");
+    console.log("這是放在 HTML head 的 Javascript");
+    
+    var name ="這是一個測試 for confirm()";
+    confirm(name);
+    
+    var name1;
+    name1 = prompt("請輸入你的姓名");
+    document.write("你的姓名是" +  name1);
+    
+    
+    function functionName(){
+        
+    }
+    
+</script>
+        
+        
+ <script src="test.js">
+ /*  
+   -事先宣告, 呼叫時, 才會被讀取
+   -可多檔共用, 不用重複撰寫
+   -集中維護, 可重複再利用 
+ */    
+     
+ </script>        
+      
+        
+ <script>
+     //頁面載入後才會被執行
+     window.onload = function(){
+     console.log("這是 window.onload");     
+     }   
+ </script>          
+            
+                
+</head>
+<body>
+<script>
+    /* 
+      - 網頁載入時, 立即被執行,如: 動態效果
+      - 某些事件必須立即處理, 如: 同意後 ....
+      - 為某些元件處理預設環境. 如: 動態按鈕
+    */
+    document.write("<p><i>這是放在 HTML body 的 Javascript</i></p>");
+    console.log("這是放在 HTML body 的 Javascript");   
+    function functionName(){
+        
+    }
+    
+</script>
+
+
+
+</body>
+<script>
+    /* 
+      - 網頁載入完成後, 才會被執行
+      - 通常用於DOM元素, 已經成立, 才能執行的程式
+      - 為某些元件做更換或後續處裡
+    */
+    document.write("<p><i>這是放在 HTML body 區塊後的 Javascript</i></p>");
+    
+    console.log("Hi! I am Here!");
+    
+    function functionName(){
+        
+    }
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

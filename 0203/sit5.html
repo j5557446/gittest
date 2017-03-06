@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+    
+        .box{
+            width: 600px;
+            height: 300px;
+            background-color: green;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+           padding: 30px;
+            
+            
+        }
+        
+        .box::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            
+        }
+        
+        .box .thumbs{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            display: inline-block;
+            vertical-align: middle;
+            
+            
+        }
+        
+/*
+        .box .thumbs .img{
+            height: 150%;
+        }
+*/
+        
+        .box .content{
+            width: 340px;
+            vertical-align: middle;
+            //background-color: red;
+            display: inline-block;
+            font-size: 16px;
+            padding: 30px;
+            
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+    <div class="box">
+        <div class="thumbs"></div>
+        <div class="content">
+            <h2>qwert</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni obcaecati, voluptatem a similique placeat facilis cumque voluptate necessitatibus quod laborum animi velit laudantium repellendus dolorem modi enim! Eius, consectetur.</p>
+        </div>
+    </div>
+</body>
+</html>
